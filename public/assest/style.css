@@ -1,0 +1,455 @@
+body {
+    background-color: red;
+    font-size: 1.1rem;
+    color: white;
+    margin: 0;
+    overflow-x: hidden;
+    scroll-padding-top: 70px;
+    padding-top: 75px;
+}
+.text-small{
+    font-size: 1.4rem;
+    font-family: 'Lato',sans-serif;
+    color: white;
+}
+
+html {
+    scroll-behavior: smooth;
+    overflow-x: hidden;
+    scroll-padding-top: 70px;
+}
+
+/*center*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+  }
+
+/*logo*/
+.logo{
+    width: 8rem;
+    height: 5rem;
+}
+
+
+
+/* Navbar */
+.navbar {
+    font-family: 'Montserrat';
+    font-weight: bold;
+    font-size: 17pt;
+    border-left: 3px solid white;
+    background-color: black;
+}
+
+.navbar a {
+    color: white;
+}
+
+.navbar a:hover {
+    color: rgb(116, 111, 111);
+}
+
+.nav-pills .nav-link.active,
+.nav-pills .show>.nav-link {
+    color: rgb(8, 8, 8);
+    border-bottom: 3px solid white;
+    background-color: black;
+    border-radius: 0;
+    margin: auto;
+    color: white;
+    padding-left: 32px;
+    padding-right: 32px;
+
+}
+.xyz:focus{
+    outline: 0;
+    box-shadow: none !important;
+}
+/* custom nav pills */
+@media (max-width: 1195px) {
+
+    .nav-pills .nav-link.active,
+    .nav-pills .show>.nav-link {
+        background-color: transparent;
+        
+        color: rgb(255, 255, 255);
+    }
+}
+/* Navbar Toggler */
+.custom-toggler .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgb(255,255,255)' stroke-width='1' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E");
+    border-radius: 3px;
+    padding: 19px;
+}
+
+/* fold-page-home */
+.box{
+    position: absolute;
+    width: 1205px;
+    height: 531px;
+    left: 106px;
+    top: 314px; 
+    background: #000000;
+    border: 6px solid #FFFFFF;
+    box-sizing: border-box;
+}
+
+
+/* scroll-bar */
+body::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+body::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 6px rgba(255, 255, 255);
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background-color: rgb(255, 255, 255);
+  
+}
+
+/* alignment of nav-elements*/
+.section{
+    padding-top: 3rem;
+}
+/* buttons */
+.btn{
+    border: 4px solid white;
+    font-family: 'Lato',sans-serif;
+    font-size: 1.7rem;
+    padding: 1.2rem;
+    color:white;
+}
+.btn:focus{
+    outline: 0;
+    box-shadow: none !important;
+}
+
+.btn:hover{
+    background-color: #FCE205;
+    color: black;
+    font-weight: bold;
+}
+.icons{
+    width: 500px;
+    height: 500px;
+}
+.text-big{
+    font-size: 4rem;
+    font-family: 'Montserrat',sans-serif;
+    color: white;
+
+}
+.main-img{
+    margin-top:-50px;
+    justify-content: center;
+}
+.hr{
+    border: 3px solid white;
+    width:500px;
+    text-align:center;
+   
+}
+.footer-text{
+    font-size: 1.4rem;
+    font-family: 'Lato',sans-serif;
+    color: white;
+}
+.footer-text:hover{
+    color: #FCE205;
+}
+/*Scroll Down animation*/
+.scrolldown{
+    position: absolute;
+    bottom: 40px;
+    left: 50%;
+    width:40px;
+    height:40px;
+    transform: translateY(-80px) translateX(-50%)
+        rotate(45deg);
+}
+.scrolldown span{
+    position: absolute;
+    top:0;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-bottom: 2px solid #fff;
+    border-right: 2px solid #fff;
+    animation: animate 1.5s linear infinite;
+    opacity: 0;
+}
+.scrolldown span:nth-child(1){
+    transform: translate(-15px,-15px);
+    animation-delay: -0.4s;
+}
+.scrolldown span:nth-child(2){
+    transform: translate(0,0);
+    animation-delay: -0.2s;
+}
+.scrolldown span:nth-child(3){
+    transform: translate(15px,15px);
+    animation-delay: 0s;
+}
+@keyframes animate{
+    0%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+    25%{
+        top: 0px;
+        left: 0px;
+        opacity: 1;
+    }
+    100%{
+        top: -5px;
+        left: -5px;
+        opacity: 0;
+    }
+}
+/*End of scroll down animation*/
+.zoomin img:hover {
+    -webkit-transform:scale(1.05); /* Safari and Chrome */
+    -moz-transform:scale(1.05); /* Firefox */
+    -ms-transform:scale(1.05); /* IE 9 */
+    -o-transform:scale(1.05); /* Opera */
+     transform:scale(1.05);
+  }
+
+  
+/*For Music animation*/
+.spans span{
+    width:20px;
+    height:30px;
+    margin-left: 1px;
+    background-color:#ffc971;
+    display: inline-block;
+    transform-style:preserve-3d;
+    animation: music 1.5s infinite ease-in-out;
+}
+.spans span:nth-of-type(2){
+    animation-delay:0.2s;    
+}
+.spans span:nth-of-type(3){
+    animation-delay:.4s;
+}
+.spans span:nth-of-type(4){
+    animation-delay:.6s;
+}
+.spans span:nth-of-type(5){
+    animation-delay:.8s;
+}
+.spans span:nth-of-type(6){
+    animation-delay:1s;
+}
+.spans span:nth-of-type(7){
+    animation-delay:1.2s;
+}
+.spans span:nth-of-type(8){
+    animation-delay:1.4s;
+}
+.spans span:nth-of-type(9){
+    animation-delay:1.6s;
+}
+.spans span:nth-of-type(10){
+    animation-delay:1.8s;
+}
+.spans span:nth-of-type(11){
+    animation-delay:2.0s;
+}
+.spans span:nth-of-type(12){
+    animation-delay:2.2s;
+}
+.spans span:nth-of-type(13){
+    animation-delay:2.4s;
+}
+.spans span:nth-of-type(14){
+    animation-delay:2.6s;
+}
+.spans span:nth-of-type(15){
+    animation-delay:2.8s;    
+}
+.spans span:nth-of-type(16){
+    animation-delay:3.0s;
+}
+.spans span:nth-of-type(17){
+    animation-delay:3.2s;
+}
+.spans span:nth-of-type(18){
+    animation-delay:3.4s;
+}
+.spans span:nth-of-type(19){
+    animation-delay:3.6s;
+}
+.spans span:nth-of-type(20){
+    animation-delay:3.8s;
+}
+.spans span:nth-of-type(21){
+    animation-delay:4.0s;
+}
+.spans span:nth-of-type(22){
+    animation-delay:4.2s;
+}
+.spans span:nth-of-type(23){
+    animation-delay:4.4s;
+}
+.spans span:nth-of-type(24){
+    animation-delay:4.6s;
+}
+.spans span:nth-of-type(25){
+    animation-delay:4.8s;
+}
+.spans span:nth-of-type(26){
+    animation-delay:5.0s;
+}
+.spans span:nth-of-type(27){
+    animation-delay:5.2s;
+}
+.spans span:nth-of-type(28){
+    animation-delay:5.4s;
+}
+.spans span:nth-of-type(29){
+    animation-delay:5.6s;
+}
+.spans span:nth-of-type(30){
+    animation-delay:5.8s;
+}
+.spans span:nth-of-type(31){
+    animation-delay:6.0s;
+}
+.spans span:nth-of-type(32){
+    animation-delay:6.2s;
+}
+.spans span:nth-of-type(33){
+    animation-delay:6.4s;
+}
+.spans span:nth-of-type(34){
+    animation-delay:6.6s;
+}
+.spans span:nth-of-type(35){
+    animation-delay:6.8s;
+}
+.spans span:nth-of-type(36){
+    animation-delay:7.0s;    
+}
+.spans span:nth-of-type(37){
+    animation-delay:7.2s;
+}
+.spans span:nth-of-type(38){
+    animation-delay:7.4s;
+}
+.spans span:nth-of-type(39){
+    animation-delay:7.6s;
+}
+.spans span:nth-of-type(40){
+    animation-delay:7.8s;
+}
+.spans span:nth-of-type(41){
+    animation-delay:8.0s;
+}
+.spans span:nth-of-type(42){
+    animation-delay:8.2s;
+}
+.spans span:nth-of-type(43){
+    animation-delay:8.4s;
+}
+.spans span:nth-of-type(44){
+    animation-delay:8.6s;
+}
+.spans span:nth-of-type(45){
+    animation-delay:8.8s;
+}
+.spans span:nth-of-type(46){
+    animation-delay:9.0s;
+}
+.spans span:nth-of-type(47){
+    animation-delay:9.2s;
+}
+.spans span:nth-of-type(48){
+    animation-delay:9.4s;
+}
+.spans span:nth-of-type(49){
+    animation-delay:9.6s;
+}
+.spans span:last-of-type{
+    animation-delay: 9.8s;
+}
+
+@keyframes music{
+     0%{
+        height: 50px;
+        background-color:#cc5803;
+    }
+    25%{
+        height:75px;
+        background-color:#e2711d;
+    }
+    50%{
+        height: 100px;
+        background-color:#ff9505;
+    }
+    75%{
+        background-color:#ffb627;
+    }
+}
+/*End of music animation*/
+.playlist{
+    border: 3px solid white;
+    padding: 8px;
+}
+
+#srchtxt{
+    background-color: #000000;
+    margin: 5rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
+    color: white;
+    overflow: hidden;
+    border: 3px solid white;
+    border-radius: 30px;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 17px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+#srchtxt:focus{
+    outline: 0;
+    box-shadow: none !important;
+background-color: white;
+opacity: 0.9;
+color: black;
+}
+
+#btn1{
+    background-color: #000000;
+    color: white;
+    overflow: hidden;
+    cursor: pointer;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    border: 3px solid white;
+    font-family: Montserrat;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 17px;
+    line-height: 50px;
+    color: #FFFFFF;
+}
+#btn1:hover{
+    background-color: rgb(237, 223, 25);
+    color:black;
+    transition: background-color 0.8s ease;
+}
+#btn1:focus{
+    outline: 0;
+    box-shadow: none !important;
+}
+
