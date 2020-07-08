@@ -9,3 +9,5 @@ I built this app in 3 days and learnt about RestAPI and handling errors in Nodej
 2. Providing Authentication with passport / or by our own using JWT tokens.
 3. Connecting it for user interaction to add there own blog and updates in it.
 4. Providing a space for teenagers ans students to get there classes online and make notes.
+# Live demo
+[COVICT](https://polar-river-10789.herokuapp.com/)
